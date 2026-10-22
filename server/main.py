@@ -33,6 +33,8 @@ def on_startup():
     init_db()
 
 @app.get("/")
+@app.get("/api")
+@app.get("/api/")
 def root():
     return {
         "app": "VisionFit TV API",

@@ -1,6 +1,7 @@
 import { WorkoutSession, UserStats, AppSettings, Workout } from '../types';
 import { WORKOUT_CATALOGUE } from '../data/workouts';
 import { INITIAL_HISTORY, INITIAL_USER_STATS, INITIAL_SETTINGS } from '../data/sampleHistory';
+import { getBaseApiUrl } from './apiConfig';
 
 const STORAGE_KEYS = {
   SESSIONS: 'visionfit_sessions_v1',
@@ -59,6 +60,16 @@ class StorageService {
     };
 
     localStorage.setItem(STORAGE_KEYS.STATS, JSON.stringify(newStats));
+    try {
+      const apiUrl = getBaseApiUrl();
+      fetch(`${apiUrl}/api/sessions`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(session)
+      }).catch(() => {});
+    } catch {
+      // Ignore background sync errors
+    }
     return newStats;
   }
 

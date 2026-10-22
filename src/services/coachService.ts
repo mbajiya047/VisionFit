@@ -1,6 +1,7 @@
 import { Workout, WorkoutSession, UserStats, AICoachMessage } from '../types';
 import { tvStorage } from './storage';
 import { WORKOUT_CATALOGUE } from '../data/workouts';
+import { getBaseApiUrl } from './apiConfig';
 
 export interface CoachQueryOptions {
   history?: WorkoutSession[];
@@ -9,7 +10,7 @@ export interface CoachQueryOptions {
 }
 
 export class AICoachService {
-  private backendUrl = 'http://localhost:8000';
+  private backendUrl = getBaseApiUrl();
 
   // Get personalized workout recommendation based on recent history
   public getPersonalizedRecommendation(): {

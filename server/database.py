@@ -9,7 +9,10 @@ import os
 from datetime import datetime, timedelta
 from typing import List, Dict, Any, Optional
 
-DB_PATH = os.path.join(os.path.dirname(__file__), "visionfit.db")
+if os.getenv("VERCEL") == "1" or not os.access(os.path.dirname(__file__), os.W_OK):
+    DB_PATH = os.path.join("/tmp", "visionfit.db")
+else:
+    DB_PATH = os.path.join(os.path.dirname(__file__), "visionfit.db")
 
 def get_connection():
     conn = sqlite3.connect(DB_PATH)
