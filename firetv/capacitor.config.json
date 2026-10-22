@@ -1,0 +1,14 @@
+{
+  "appId": "com.visionfit.tv",
+  "appName": "VisionFit TV",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "cleartext": true
+  },
+  "android": {
+    "allowMixedContent": true,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": true
+  }
+}

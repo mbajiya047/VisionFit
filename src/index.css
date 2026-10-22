@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --tv-bg: #0b0d12;
+    --tv-card: #131720;
+    --tv-card-hover: #1c2230;
+    --tv-border: #242c3d;
+    --tv-accent: #d4ff00;
+    --tv-accent-dim: rgba(212, 255, 0, 0.15);
+    --tv-accent-glow: rgba(212, 255, 0, 0.35);
+    --tv-amber: #f59e0b;
+    --tv-text: #f3f4f6;
+    --tv-text-muted: #9ca3af;
+    --tv-text-subtle: #6b7280;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--tv-bg);
+    color: var(--tv-text);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* TV Focus States and Spatial Navigation */
+.tv-focusable {
+  position: relative;
+  outline: none;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, box-shadow, border-color;
+}
+
+.tv-focusable:focus-visible,
+.tv-focusable.tv-focused {
+  transform: scale(1.04);
+  z-index: 30;
+  border-color: #d4ff00 !important;
+  box-shadow: 0 0 0 3px #d4ff00, 0 12px 30px -4px rgba(212, 255, 0, 0.35);
+}
+
+/* Subtle TV focus for smaller buttons */
+.tv-focusable-sm:focus-visible,
+.tv-focusable-sm.tv-focused {
+  transform: scale(1.06);
+  z-index: 30;
+  border-color: #d4ff00 !important;
+  box-shadow: 0 0 0 2px #d4ff00, 0 8px 20px -2px rgba(212, 255, 0, 0.4);
+}
+
+/* TV Active Card Focus Effect */
+.tv-card-focus:focus-visible,
+.tv-card-focus.tv-focused {
+  transform: translateY(-4px) scale(1.03);
+  border-color: #d4ff00 !important;
+  box-shadow: 0 0 0 3px #d4ff00, 0 20px 35px -5px rgba(0, 0, 0, 0.7), 0 0 25px rgba(212, 255, 0, 0.25);
+}
+
+/* Custom 10-foot TV overscan safe padding */
+.tv-safe-container {
+  padding-left: clamp(24px, 4vw, 56px);
+  padding-right: clamp(24px, 4vw, 56px);
+  padding-top: clamp(20px, 3vh, 40px);
+  padding-bottom: clamp(24px, 4vh, 48px);
+}
+
+/* Horizontal Swimlane smooth scroll */
+.tv-swimlane {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding-bottom: 12px;
+}
+
+.tv-swimlane::-webkit-scrollbar {
+  display: none;
+}
+
+/* Pulse animation for active exercise timer */
+@keyframes timerPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.02);
+    opacity: 0.92;
+  }
+}
+
+.animate-timer-pulse {
+  animation: timerPulse 1s ease-in-out infinite;
+}
+
+/* Subtle TV glow */
+.tv-glow-accent {
+  text-shadow: 0 0 20px rgba(212, 255, 0, 0.5);
+}

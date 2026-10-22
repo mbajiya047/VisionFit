@@ -1,0 +1,15 @@
+{
+  "title": "VisionFit TV",
+  "url": "http://YOUR_LOCAL_IP:3000",
+  "version": "1.0.0",
+  "description": "Amazon Developer Build, Ship, Shape 2026 Hackathon - Fire TV Track",
+  "orientation": "landscape",
+  "fullscreen": true,
+  "tvMode": true,
+  "remote": {
+    "dpad": true,
+    "select": true,
+    "back": true,
+    "mediaKeys": true
+  }
+}
