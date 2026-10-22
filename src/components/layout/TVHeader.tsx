@@ -52,6 +52,7 @@ export const TVHeader: React.FC<TVHeaderProps> = ({
             <Dumbbell className="w-6 h-6 text-black" strokeWidth={2.4} />
           </div>
           <div>
+            <h1 className="sr-only">VisionFit TV — AI-Assisted Fitness Companion for Fire TV</h1>
             <div className="flex items-center gap-2">
               <span className="text-2xl font-black tracking-tight text-white uppercase font-sans">
                 VISION<span className="text-[#d4ff00]">FIT</span>
