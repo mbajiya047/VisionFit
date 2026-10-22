@@ -41,7 +41,6 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
 
   // Swimlane sections
   const quickWorkouts = allWorkouts.filter(w => w.durationMinutes <= 15);
-  const strengthWorkouts = allWorkouts.filter(w => w.category === 'strength' || w.category === 'hiit');
   const mobilityWorkouts = allWorkouts.filter(w => w.category === 'mobility' || w.category === 'recovery' || w.category === 'yoga');
 
   return (
@@ -105,9 +104,9 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
             </span>
           </div>
 
-          <h2 className="text-4xl font-black text-white tracking-tight leading-none mb-2">
+          <h1 className="text-4xl font-black text-white tracking-tight leading-none mb-2">
             {featuredWorkout.title}
-          </h2>
+          </h1>
 
           <p className="text-base text-neutral-300 mb-6 leading-relaxed line-clamp-2">
             {featuredWorkout.description}
@@ -197,7 +196,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
           <div className="flex items-center gap-2">
             <Clock className="w-5 h-5 text-sky-400" />
             <h2 className="text-xl font-bold text-white tracking-tight">
-              Quick & Punchy (Under 15 Mins)
+              Quick &amp; Punchy (Under 15 Mins)
             </h2>
           </div>
           <button
@@ -228,7 +227,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
           <div className="flex items-center gap-2">
             <Zap className="w-5 h-5 text-emerald-400" />
             <h2 className="text-xl font-bold text-white tracking-tight">
-              Mobility & Posture Reset
+              Mobility &amp; Posture Reset
             </h2>
           </div>
         </div>

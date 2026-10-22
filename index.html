@@ -19,7 +19,7 @@
     <meta property="og:image" content="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="VisionFit TV Living Room Fitness Interface on Fire TV" />
+    <meta property="og:image:alt" content="VisionFit TV Living Room Fitness Interface" />
     <meta property="og:site_name" content="VisionFit TV" />
     <meta property="og:locale" content="en_US" />
 
@@ -70,104 +70,89 @@
     </script>
   </head>
   <body class="bg-[#0b0d12] text-neutral-100 antialiased overflow-x-hidden">
-    <!-- Main Application Mounting Container with 100% Semantic HTML5 Structure -->
+    <!-- Main Application Mounting Container with Semantic Crawlable Content -->
     <div id="root">
-      <!-- Semantic Landmark: Header & Navigation -->
-      <header role="banner" style="padding: 24px; border-bottom: 1px solid #242c3d; background: #0b0d12;">
-        <nav role="navigation" aria-label="Primary TV Navigation" style="display: flex; gap: 16px; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto; flex-wrap: wrap;">
-          <a href="#home" title="VisionFit TV Homepage" style="font-weight: 900; font-size: 24px; color: #ffffff; text-decoration: none;">
+      <header style="padding: 24px; border-bottom: 1px solid #242c3d; background: #0b0d12;">
+        <nav aria-label="Main Navigation" style="display: flex; gap: 16px; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto; flex-wrap: wrap;">
+          <a href="#home" style="font-weight: 900; font-size: 24px; color: #ffffff; text-decoration: none;">
             VISION<span style="color: #d4ff00;">FIT</span> TV
           </a>
           <ul style="display: flex; gap: 20px; list-style: none; margin: 0; padding: 0; flex-wrap: wrap;">
-            <li><a href="#home" title="Navigate to Home Screen" style="color: #f3f4f6; text-decoration: none; font-weight: 600;">Home</a></li>
-            <li><a href="#discover" title="Browse Workout Discovery Library" style="color: #9ca3af; text-decoration: none;">Workout Discovery</a></li>
-            <li><a href="#setup" title="Configure Custom Workout Session" style="color: #9ca3af; text-decoration: none;">Custom Setup</a></li>
-            <li><a href="#coach" title="Consult AI Fitness Coach" style="color: #9ca3af; text-decoration: none;">AI Coach</a></li>
-            <li><a href="#progress" title="Review Physical Activity Progress" style="color: #9ca3af; text-decoration: none;">Progress</a></li>
-            <li><a href="#settings" title="Adjust Fire TV Settings" style="color: #9ca3af; text-decoration: none;">Settings</a></li>
+            <li><a href="#home" style="color: #f3f4f6; text-decoration: none; font-weight: 600;">Home</a></li>
+            <li><a href="#features" style="color: #9ca3af; text-decoration: none;">Features</a></li>
+            <li><a href="#discover" style="color: #9ca3af; text-decoration: none;">Workout Discovery</a></li>
+            <li><a href="#setup" style="color: #9ca3af; text-decoration: none;">Custom Setup</a></li>
+            <li><a href="#coach" style="color: #9ca3af; text-decoration: none;">AI Coach</a></li>
+            <li><a href="#progress" style="color: #9ca3af; text-decoration: none;">Progress</a></li>
+            <li><a href="#settings" style="color: #9ca3af; text-decoration: none;">Settings</a></li>
           </ul>
         </nav>
       </header>
 
-      <!-- Semantic Landmark: Main Content -->
-      <main role="main" style="max-width: 1200px; margin: 0 auto; padding: 40px 24px;">
+      <main style="max-width: 1200px; margin: 0 auto; padding: 40px 24px;">
         <article>
-          <!-- Section 1: Home & Hero Overview -->
-          <section id="home" aria-labelledby="main-heading" style="margin-bottom: 48px;">
-            <header>
-              <p style="color: #d4ff00; font-weight: 700; text-transform: uppercase; font-size: 14px; letter-spacing: 1px; margin-bottom: 8px;">
-                Amazon Developer Hackathon Project • Fire TV Track
-              </p>
-              <h1 id="main-heading" style="font-size: 40px; font-weight: 900; color: #ffffff; line-height: 1.2; margin-top: 0; margin-bottom: 16px;">
-                VisionFit TV — AI-Assisted Fitness Companion for Amazon Fire TV
-              </h1>
-              <p style="font-size: 18px; color: #9ca3af; line-height: 1.6; max-width: 850px; margin-bottom: 24px;">
-                VisionFit TV transforms the living room television from a passive entertainment screen into an interactive, AI-assisted wellness companion. Designed specifically for Amazon Fire TV and a 10-foot viewing distance, the platform enables households to discover guided routines, follow precise biomechanical movement instructions, track physical activity, and receive sports science recommendations using standard TV remote controls.
-              </p>
-            </header>
-
-            <!-- Hero Image with explicit width/height and alt tag to eliminate CLS and fulfill Structure checks -->
-            <figure style="margin: 0 0 32px 0;">
-              <img
-                src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80"
-                alt="VisionFit TV Living Room Fitness Interface on Fire TV"
-                width="1200"
-                height="630"
-                loading="eager"
-                style="width: 100%; max-width: 100%; height: auto; border-radius: 20px; border: 1px solid #242c3d; display: block;"
-              />
-              <figcaption style="font-size: 12px; color: #6b7280; margin-top: 8px; text-align: right;">
-                High-contrast 10-foot television interface with Electric Lime focus highlights.
-              </figcaption>
-            </figure>
+          <!-- Section 1: Home Overview -->
+          <section id="home" style="margin-bottom: 48px;">
+            <p style="color: #d4ff00; font-weight: 700; text-transform: uppercase; font-size: 14px; letter-spacing: 1px; margin-bottom: 8px;">
+              Amazon Developer Hackathon Project • Fire TV Track
+            </p>
+            <h1 style="font-size: 40px; font-weight: 900; color: #ffffff; line-height: 1.2; margin-top: 0; margin-bottom: 16px;">
+              VisionFit TV — AI-Assisted Fitness Companion for Amazon Fire TV
+            </h1>
+            <p style="font-size: 18px; color: #9ca3af; line-height: 1.6; max-width: 850px; margin-bottom: 24px;">
+              VisionFit TV transforms the living room television from a passive entertainment screen into an interactive, AI-assisted wellness companion. Designed specifically for Amazon Fire TV and a 10-foot viewing distance, the platform enables households to discover guided routines, follow precise biomechanical movement instructions, track physical activity, and receive sports science recommendations using standard TV remote controls.
+            </p>
+            <p style="font-size: 16px; color: #9ca3af; line-height: 1.6; max-width: 850px; margin-bottom: 24px;">
+              Unlike mobile fitness applications that force users to prop up a small smartphone on a coffee table or squint at tablets during high-intensity intervals, VisionFit TV takes full advantage of the largest high-definition display in the home. The experience remains completely useful without requiring specialized external cameras, wearables, or heart-rate monitors, while remaining architected to support future sensor extensions.
+            </p>
           </section>
 
-          <!-- Section 2: Core Capabilities & UI -->
-          <section id="features" aria-labelledby="core-features" style="margin-bottom: 48px;">
-            <h2 id="core-features" style="font-size: 28px; font-weight: 800; color: #ffffff; margin-bottom: 20px;">
+          <!-- Section 2: Core Capabilities -->
+          <section id="features" style="margin-bottom: 48px;">
+            <h2 style="font-size: 28px; font-weight: 800; color: #ffffff; margin-bottom: 20px;">
               Core Capabilities and 10-Foot Television User Experience
             </h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
-              <section style="background: #131720; border: 1px solid #242c3d; border-radius: 16px; padding: 24px;">
+              <div style="background: #131720; border: 1px solid #242c3d; border-radius: 16px; padding: 24px;">
                 <h3 style="font-size: 20px; font-weight: 700; color: #d4ff00; margin-top: 0;">100% TV Remote Control Navigation</h3>
                 <p style="color: #9ca3af; font-size: 14px; line-height: 1.6;">
                   Every single interactive component is engineered for Fire TV D-Pad directional navigation. Pressing Arrow Keys smoothly navigates focus with high-contrast Electric Lime outlines, while Center Select activates items, Space toggles playback, and Escape returns to previous views. The layout complies with Amazon 5% TV title-safe overscan margins.
                 </p>
-              </section>
+              </div>
 
-              <section style="background: #131720; border: 1px solid #242c3d; border-radius: 16px; padding: 24px;">
+              <div style="background: #131720; border: 1px solid #242c3d; border-radius: 16px; padding: 24px;">
                 <h3 style="font-size: 20px; font-weight: 700; color: #d4ff00; margin-top: 0;">Evidence-Based AI Sports Science Coach</h3>
                 <p style="color: #9ca3af; font-size: 14px; line-height: 1.6;">
                   VisionFit TV features a built-in deterministic sports science knowledge engine that analyzes logged training history, weekly streaks, and post-session difficulty feedback. If a user logs a strenuous session, the coach suggests an active recovery mobility flow. The coach explains proper joint angles, cervical spine alignment, and safe movement mechanics.
                 </p>
-              </section>
+              </div>
 
-              <section style="background: #131720; border: 1px solid #242c3d; border-radius: 16px; padding: 24px;">
+              <div style="background: #131720; border: 1px solid #242c3d; border-radius: 16px; padding: 24px;">
                 <h3 style="font-size: 20px; font-weight: 700; color: #d4ff00; margin-top: 0;">Interactive Active Workout Runner</h3>
                 <p style="color: #9ca3af; font-size: 14px; line-height: 1.6;">
                   Active sessions display a 96-pixel tabular countdown timer, clear step-by-step form cues, and vector biomechanical movement demonstrations. Web Audio API synthesized acoustic signals provide 3-2-1 beeps and interval chimes without network buffering delays, while speech synthesis announces upcoming exercises.
                 </p>
-              </section>
+              </div>
 
-              <section style="background: #131720; border: 1px solid #242c3d; border-radius: 16px; padding: 24px;">
+              <div style="background: #131720; border: 1px solid #242c3d; border-radius: 16px; padding: 24px;">
                 <h3 style="font-size: 20px; font-weight: 700; color: #d4ff00; margin-top: 0;">Accessible Low-Impact Modifications</h3>
                 <p style="color: #9ca3af; font-size: 14px; line-height: 1.6;">
                   Joint health and inclusive accessibility are core priorities. Every exercise includes a single-click accessible alternative—such as swapping dynamic air squats for chair box squats or jumping jacks for low-impact lateral step jacks—ensuring users of all mobility levels can maintain physical activity safely.
                 </p>
-              </section>
+              </div>
             </div>
           </section>
 
-          <!-- Section 3: Workout Discovery Library -->
-          <section id="discover" aria-labelledby="curated-library" style="margin-bottom: 48px;">
-            <h2 id="curated-library" style="font-size: 28px; font-weight: 800; color: #ffffff; margin-bottom: 20px;">
+          <!-- Section 3: Curated Living Room Workout Library -->
+          <section id="discover" style="margin-bottom: 48px;">
+            <h2 style="font-size: 28px; font-weight: 800; color: #ffffff; margin-bottom: 20px;">
               Curated Living Room Workout Library
             </h2>
             <p style="color: #9ca3af; font-size: 15px; line-height: 1.6; margin-bottom: 20px;">
               Explore professionally designed workouts structured specifically for home environments with zero bulky gym equipment requirements. Each routine features dynamic work and rest ratios to optimize cardiovascular conditioning and muscular endurance.
             </p>
             <div style="display: flex; flex-direction: column; gap: 16px;">
-              <article style="background: #131720; border: 1px solid #242c3d; border-radius: 14px; padding: 20px;">
+              <div style="background: #131720; border: 1px solid #242c3d; border-radius: 14px; padding: 20px;">
                 <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px;">
                   <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin: 0;">Ignite 360: Full Body Metabolic Conditioning</h3>
                   <span style="color: #d4ff00; font-size: 13px; font-weight: 700;">20 Mins • High Intensity • ~210 kcal</span>
@@ -175,10 +160,10 @@
                 <p style="color: #9ca3af; font-size: 14px; line-height: 1.6; margin: 8px 0 12px 0;">
                   A fast-paced metabolic circuit targeting quadriceps, core stabilizers, deltoids, and cardiovascular endurance using tempo air squats, incline push-ups, and mountain climbers.
                 </p>
-                <a href="#discover" title="Explore Ignite 360 Full Body Routine" style="color: #d4ff00; text-decoration: none; font-size: 13px; font-weight: 700;">Explore Ignite 360 Full Body MetCon Routine &rarr;</a>
-              </article>
+                <a href="#discover" style="color: #d4ff00; text-decoration: none; font-size: 13px; font-weight: 700;">Explore Ignite 360 Full Body MetCon Routine Details &rarr;</a>
+              </div>
 
-              <article style="background: #131720; border: 1px solid #242c3d; border-radius: 14px; padding: 20px;">
+              <div style="background: #131720; border: 1px solid #242c3d; border-radius: 14px; padding: 20px;">
                 <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px;">
                   <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin: 0;">Fire TV Morning Mobility &amp; Spinal Flow</h3>
                   <span style="color: #d4ff00; font-size: 13px; font-weight: 700;">14 Mins • Beginner Friendly • ~85 kcal</span>
@@ -186,10 +171,10 @@
                 <p style="color: #9ca3af; font-size: 14px; line-height: 1.6; margin: 8px 0 12px 0;">
                   Gentle joint decompression, hip opening, and spinal articulation to relieve morning stiffness and counteract prolonged desk sitting with cat-cow poses and posterior bridges.
                 </p>
-                <a href="#discover" title="Explore Morning Mobility Routine" style="color: #d4ff00; text-decoration: none; font-size: 13px; font-weight: 700;">Explore Morning Mobility and Spinal Flow Routine &rarr;</a>
-              </article>
+                <a href="#discover" style="color: #d4ff00; text-decoration: none; font-size: 13px; font-weight: 700;">Explore Morning Mobility and Spinal Flow Routine Details &rarr;</a>
+              </div>
 
-              <article style="background: #131720; border: 1px solid #242c3d; border-radius: 14px; padding: 20px;">
+              <div style="background: #131720; border: 1px solid #242c3d; border-radius: 14px; padding: 20px;">
                 <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px;">
                   <h3 style="font-size: 18px; font-weight: 700; color: #ffffff; margin: 0;">Core Armor: 10-Minute Fire TV Abdominals</h3>
                   <span style="color: #d4ff00; font-size: 13px; font-weight: 700;">10 Mins • All Levels • ~75 kcal</span>
@@ -197,127 +182,66 @@
                 <p style="color: #9ca3af; font-size: 14px; line-height: 1.6; margin: 8px 0 12px 0;">
                   Focused trunk stabilization targeting deep transverse abdominis, rectus abdominis, and obliques with controlled deadbug isometric holds and bird-dog extensions.
                 </p>
-                <a href="#discover" title="Explore Core Armor Routine" style="color: #d4ff00; text-decoration: none; font-size: 13px; font-weight: 700;">Explore Core Armor 10-Minute Abdominals Routine &rarr;</a>
-              </article>
+                <a href="#discover" style="color: #d4ff00; text-decoration: none; font-size: 13px; font-weight: 700;">Explore Core Armor 10-Minute Abdominals Routine Details &rarr;</a>
+              </div>
             </div>
           </section>
 
           <!-- Section 4: Custom Setup Wizard -->
-          <section id="setup" aria-labelledby="custom-wizard-info" style="margin-bottom: 48px;">
-            <h2 id="custom-wizard-info" style="font-size: 28px; font-weight: 800; color: #ffffff; margin-bottom: 16px;">
-              Custom Session Generator and Workout Blueprint
+          <section id="setup" style="margin-bottom: 48px;">
+            <h2 style="font-size: 28px; font-weight: 800; color: #ffffff; margin-bottom: 16px;">
+              Custom Session Generator and Workout Analytics
             </h2>
             <p style="color: #9ca3af; font-size: 15px; line-height: 1.6; margin-bottom: 16px;">
               The custom workout setup wizard allows users to tailor routines by selecting durations from 10 to 30 minutes, defining goals such as fat burn, hypertrophy, or mobility, and selecting available equipment like medium dumbbells or bodyweight only. The recommendation engine dynamically compiles a balanced set of exercises with calculated rest intervals.
             </p>
             <p style="color: #9ca3af; font-size: 15px; line-height: 1.6;">
-              All completed workouts, active duration, calories burned, and streaks are persisted in local storage and synchronized with a high-performance SQLite backend.
+              All completed workouts, active duration, calories burned, and streaks are persisted in local storage and synchronized with a high-performance SQLite backend. The progress dashboard renders 7-day volume bar charts and category distribution splits, supporting long-term consistency in line with international physical activity guidelines.
             </p>
           </section>
 
-          <!-- Section 5: AI Coach Consultation -->
-          <section id="coach" aria-labelledby="ai-coach-heading" style="margin-bottom: 48px;">
-            <h2 id="ai-coach-heading" style="font-size: 28px; font-weight: 800; color: #ffffff; margin-bottom: 16px;">
-              AI Sports Science Coaching and Biomechanical Diagnostics
+          <!-- Section 5: AI Coach -->
+          <section id="coach" style="margin-bottom: 48px;">
+            <h2 style="font-size: 28px; font-weight: 800; color: #ffffff; margin-bottom: 16px;">
+              AI Sports Science Coach and Movement Diagnostics
             </h2>
-            <p style="color: #9ca3af; font-size: 15px; line-height: 1.6; margin-bottom: 16px;">
-              The AI coach evaluates historical workouts and user difficulty ratings (Easy, Just Right, Very Tough) to adapt training schedules in real time:
+            <p style="color: #9ca3af; font-size: 15px; line-height: 1.6;">
+              The AI coach evaluates training streaks and post-workout feedback ratings (Easy, Just Right, Very Tough) to adapt upcoming training recommendations. It provides real-time biomechanical guidance on foot stance width, hip hinge initiation, and knee tracking to protect joints during squats, lunges, and compound movements.
             </p>
-            <ul style="color: #9ca3af; font-size: 14px; line-height: 1.8; padding-left: 24px;">
-              <li><strong>Squat Alignment:</strong> Cues outward 10–15° foot flare and active knee tracking to prevent patellar valgus collapse.</li>
-              <li><strong>Active Recovery Protocol:</strong> Prescribes parasympathetic joint decompression routines when central nervous system fatigue is detected.</li>
-              <li><strong>Progressive Overload:</strong> Increments interval duration and density when prior sessions are rated easy.</li>
-            </ul>
           </section>
 
-          <!-- Section 6: Progress & Analytics -->
-          <section id="progress" aria-labelledby="progress-heading" style="margin-bottom: 48px;">
-            <h2 id="progress-heading" style="font-size: 28px; font-weight: 800; color: #ffffff; margin-bottom: 16px;">
+          <!-- Section 6: Physical Activity Progress -->
+          <section id="progress" style="margin-bottom: 48px;">
+            <h2 style="font-size: 28px; font-weight: 800; color: #ffffff; margin-bottom: 16px;">
               Physical Activity Tracking and Consistency Streaks
             </h2>
             <p style="color: #9ca3af; font-size: 15px; line-height: 1.6;">
-              Tracks daily activity across four core disciplines (HIIT, Strength, Mobility, and Core). Visual progress charts render 7-day volume trends toward the World Health Organization’s recommended 150-minute weekly physical activity threshold.
+              VisionFit TV visualizes weekly volume trends across HIIT, Strength, Mobility, and Core disciplines, encouraging households to achieve the recommended 150 minutes of weekly activity with persistent streak counters.
             </p>
           </section>
 
-          <!-- Section 7: Fire TV Settings & Keybindings Table (Semantic HTML Table) -->
-          <section id="settings" aria-labelledby="settings-heading" style="margin-bottom: 48px;">
-            <h2 id="settings-heading" style="font-size: 28px; font-weight: 800; color: #ffffff; margin-bottom: 16px;">
-              Fire TV Remote Control Keybindings
+          <!-- Section 7: Settings & Keybindings -->
+          <section id="settings" style="margin-bottom: 48px;">
+            <h2 style="font-size: 28px; font-weight: 800; color: #ffffff; margin-bottom: 16px;">
+              Fire TV Remote Navigation and Environment Configuration
             </h2>
-            <div style="overflow-x: auto;">
-              <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14px; color: #9ca3af; border: 1px solid #242c3d;">
-                <thead>
-                  <tr style="background: #131720; border-bottom: 2px solid #242c3d; color: #ffffff;">
-                    <th style="padding: 12px 16px;">Remote Control Button</th>
-                    <th style="padding: 12px 16px;">Hardware Keycode</th>
-                    <th style="padding: 12px 16px;">VisionFit Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr style="border-bottom: 1px solid #242c3d;">
-                    <td style="padding: 12px 16px; font-weight: 700; color: #d4ff00;">D-Pad Up / Down / Left / Right</td>
-                    <td style="padding: 12px 16px; font-family: monospace;">ArrowUp / ArrowDown / ArrowLeft / ArrowRight</td>
-                    <td style="padding: 12px 16px;">Spatial Navigation &amp; Card Snapping</td>
-                  </tr>
-                  <tr style="border-bottom: 1px solid #242c3d;">
-                    <td style="padding: 12px 16px; font-weight: 700; color: #d4ff00;">Center Select</td>
-                    <td style="padding: 12px 16px; font-family: monospace;">Enter (Keycode 13)</td>
-                    <td style="padding: 12px 16px;">Activate Button / Launch Workout</td>
-                  </tr>
-                  <tr style="border-bottom: 1px solid #242c3d;">
-                    <td style="padding: 12px 16px; font-weight: 700; color: #d4ff00;">Back Button</td>
-                    <td style="padding: 12px 16px; font-family: monospace;">Escape / Backspace</td>
-                    <td style="padding: 12px 16px;">Dismiss Preview / Return to Home</td>
-                  </tr>
-                  <tr>
-                    <td style="padding: 12px 16px; font-weight: 700; color: #d4ff00;">Play / Pause</td>
-                    <td style="padding: 12px 16px; font-family: monospace;">MediaPlayPause / Space</td>
-                    <td style="padding: 12px 16px;">Toggle Active Interval Countdown</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </section>
-
-          <!-- Section 8: Frequently Asked Questions (Semantic Details / Summary) -->
-          <section id="faq" aria-labelledby="faq-heading" style="margin-bottom: 48px;">
-            <h2 id="faq-heading" style="font-size: 28px; font-weight: 800; color: #ffffff; margin-bottom: 20px;">
-              Frequently Asked Questions
-            </h2>
-            <details style="background: #131720; border: 1px solid #242c3d; border-radius: 12px; padding: 16px; margin-bottom: 12px;">
-              <summary style="font-weight: 700; color: #ffffff; cursor: pointer;">How does VisionFit TV work with a standard Fire TV Remote?</summary>
-              <p style="color: #9ca3af; font-size: 14px; line-height: 1.6; margin-top: 12px; margin-bottom: 0;">
-                VisionFit TV uses a custom spatial navigation engine that captures Arrow Key directional inputs and translates them into smooth focus transitions with high-visibility Electric Lime outlines.
-              </p>
-            </details>
-            <details style="background: #131720; border: 1px solid #242c3d; border-radius: 12px; padding: 16px; margin-bottom: 12px;">
-              <summary style="font-weight: 700; color: #ffffff; cursor: pointer;">Does VisionFit TV require an external webcam or wearable sensor?</summary>
-              <p style="color: #9ca3af; font-size: 14px; line-height: 1.6; margin-top: 12px; margin-bottom: 0;">
-                No external sensor is required. The core application provides fully guided interval workouts, acoustic beeps, and vector exercise animations with zero hardware dependencies. An optional optical flow repetition tracker is available when a compatible camera is connected.
-              </p>
-            </details>
-            <details style="background: #131720; border: 1px solid #242c3d; border-radius: 12px; padding: 16px;">
-              <summary style="font-weight: 700; color: #ffffff; cursor: pointer;">How are workout sessions persisted?</summary>
-              <p style="color: #9ca3af; font-size: 14px; line-height: 1.6; margin-top: 12px; margin-bottom: 0;">
-                All workouts, streaks, and settings are saved locally using high-reliability browser storage and synchronized with an asynchronous SQLite FastAPI backend.
-              </p>
-            </details>
+            <p style="color: #9ca3af; font-size: 15px; line-height: 1.6;">
+              Calibrate TV safe margins between 5% (Fire TV Standard), 3% (Tight TV), and 0% (Monitors). Use physical Arrow Keys for spatial D-Pad navigation, Enter to activate, Space to toggle intervals, and Escape for back navigation.
+            </p>
           </section>
         </article>
       </main>
 
-      <!-- Semantic Landmark: Footer -->
-      <footer role="contentinfo" style="padding: 32px 24px; border-top: 1px solid #242c3d; background: #080a0e; color: #9ca3af; font-size: 13px;">
+      <footer style="padding: 32px 24px; border-top: 1px solid #242c3d; background: #080a0e; color: #9ca3af; font-size: 13px;">
         <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
           <div>
-            <p style="margin: 0; font-weight: 600; color: #f3f4f6;">&copy; 2026 VisionFit TV. Independent proof of concept for Amazon Developer Hackathon (Fire TV Track).</p>
-            <p style="margin: 4px 0 0 0; font-size: 11px; color: #6b7280;">This independent project is not endorsed, sponsored, or officially approved by Amazon.com, Inc.</p>
+            <p style="margin: 0; font-weight: 600; color: #f3f4f6;">&copy; 2026 VisionFit TV. Independent project for Amazon Developer Hackathon (Fire TV Track).</p>
+            <p style="margin: 4px 0 0 0; font-size: 11px; color: #6b7280;">This project is not endorsed, sponsored, or officially approved by Amazon.com, Inc.</p>
           </div>
-          <nav aria-label="Footer Links Navigation" style="display: flex; gap: 20px; flex-wrap: wrap;">
-            <a href="https://github.com/mbajiya047/VisionFit" target="_blank" rel="noopener noreferrer" title="View VisionFit GitHub Source Code" style="color: #d4ff00; text-decoration: none; font-weight: 600;">GitHub Repository</a>
-            <a href="https://github.com/mbajiya047/VisionFit/blob/main/firetv/FIRE_TV_PACKAGING_GUIDE.md" target="_blank" rel="noopener noreferrer" title="Fire TV Packaging Guide" style="color: #9ca3af; text-decoration: none;">Fire TV Deployment Guide</a>
-            <a href="https://github.com/mbajiya047/VisionFit#readme" target="_blank" rel="noopener noreferrer" title="Architecture and Presentation Guide" style="color: #9ca3af; text-decoration: none;">Architecture Overview</a>
+          <nav aria-label="Footer Links" style="display: flex; gap: 20px; flex-wrap: wrap;">
+            <a href="https://github.com/mbajiya047/VisionFit" target="_blank" rel="noopener noreferrer" style="color: #d4ff00; text-decoration: none; font-weight: 600;">GitHub Repository</a>
+            <a href="https://github.com/mbajiya047/VisionFit/blob/main/firetv/FIRE_TV_PACKAGING_GUIDE.md" target="_blank" rel="noopener noreferrer" style="color: #9ca3af; text-decoration: none;">Fire TV Deployment Guide</a>
+            <a href="https://github.com/mbajiya047/VisionFit#readme" target="_blank" rel="noopener noreferrer" style="color: #9ca3af; text-decoration: none;">Architecture Overview</a>
           </nav>
         </div>
       </footer>
@@ -326,7 +250,7 @@
     <!-- Fallback for Non-JavaScript Crawlers -->
     <noscript>
       <div style="padding: 20px; background: #131720; color: #ffffff; text-align: center; border-bottom: 2px solid #d4ff00;">
-        <p>JavaScript is enabled for active countdown timers and TV remote simulation. Review full documentation at the <a href="https://github.com/mbajiya047/VisionFit" title="VisionFit TV GitHub Repository" style="color: #d4ff00;">VisionFit TV Repository</a>.</p>
+        <p>JavaScript is enabled for active countdown timers and TV remote simulation. Review full documentation at the <a href="https://github.com/mbajiya047/VisionFit" style="color: #d4ff00;">VisionFit TV Repository</a>.</p>
       </div>
     </noscript>
 

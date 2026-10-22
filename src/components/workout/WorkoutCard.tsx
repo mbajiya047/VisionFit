@@ -76,9 +76,9 @@ export const WorkoutCard: React.FC<WorkoutCardProps> = ({
       {/* Card Content */}
       <div className="p-4 flex flex-col flex-1 justify-between">
         <div>
-          <h3 className="text-lg font-bold text-white group-hover:text-[#d4ff00] transition-colors line-clamp-1">
+          <div className="text-lg font-bold text-white group-hover:text-[#d4ff00] transition-colors line-clamp-1">
             {workout.title}
-          </h3>
+          </div>
           <p className="text-xs text-neutral-400 mt-1 line-clamp-2 leading-relaxed">
             {workout.tagline || workout.description}
           </p>
